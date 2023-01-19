@@ -1,0 +1,145 @@
+header{ 
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+.class-header{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+}
+.title > h1 {
+    align-self: center;
+}
+nav{
+    display: none;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: flex;
+    justify-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+nav ul li a:hover{
+    background-color: rgb(183, 183, 183);
+}
+.categories{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 8%;
+    z-index: 1;
+}
+.categories a{
+    padding: 0px 10px 10px;
+}
+.categories ul li:hover{
+    background-color: var(--primary);
+}
+.dropdown:hover  .categories {
+    display: block;
+    background-color: var(--primary);
+}
+.dropdown:hover  .categories ul li a {
+    padding: 10px;
+}
+.dropdown:hover  .categories ul li a:hover {
+    background-color: var(--primary);
+    color: white;
+}
+.humburger{
+    position: relative;
+    padding: 10px;
+    z-index: 999;
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin: 10px;
+}
+.true{
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 45%;
+    background-color: var(--primary);
+    bottom: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 1;
+}
+.subtittle{
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .title{
+        flex: 20%;
+    }
+    nav{
+        flex: 80%;
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li a{
+        color: var(--primary);
+        font-size: 14px;
+    }
+    .true{
+        position: static;
+        background-color: white;
+        padding: 0;
+    }
+    .humburger{
+        display: none;
+    }
+    .subtittle{
+        display: none;
+    }
+    .dropdown:hover  .categories {
+        background-color: white;
+    }
+    .categories ul {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .title{
+        flex: 40%;
+    }
+    nav{
+        flex: 60%;
+        display: block;
+    }
+  } 
+  
+
+  @media only screen and (min-width: 1200px) {
+    .title{
+        flex: 50%;
+    }
+    nav{
+        flex: 50%;
+        display: block;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .title{
+        flex: 60%;
+    }
+    nav{
+        flex: 40%;
+        display: block;
+    }
+  }

@@ -1,0 +1,30 @@
+.values{
+    margin: 50px 0;
+}
+article  .title-card {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.cardlist{
+    display: grid;
+    gap: 15px;
+    width: 80%;
+}
+@media only screen and (min-width: 600px) {
+    .cardlist{
+        width: 70%;
+    }
+    .cardlist{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 980px) {
+    .cardlist{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .cardlist{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

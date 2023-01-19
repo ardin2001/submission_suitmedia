@@ -1,0 +1,99 @@
+.sliderBanner{
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+.left, .right{
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid antiquewhite;
+    padding: 8px 8px 4px;
+    font-size: 18px;
+    color: antiquewhite;
+}
+.left{
+    left: 15px;
+}
+.right{
+    right: 15px;
+}
+.left:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.right:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.menu{
+    width: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: absolute;
+    top: 92%;
+    left: 48%;
+}
+.rounded {
+    padding: 6px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.rounded:hover {
+    background-color: rgb(255, 255, 255);
+}
+.description{
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 10%;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 70%;
+    padding: 20px;
+    font-size: 16px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@media only screen and (min-width: 600px) {
+    .banner{
+        height: 350px;
+    }
+    .description{
+        width: 60%;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 980px) {
+    .banner{
+        height: 400px;
+    }
+    .description{
+        width: 50%;
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .banner{
+        height: 450px;
+    }
+    .description{
+        width: 40%;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,64 @@
+.form-container {
+    margin: 100px auto;
+}
+section .title-form{
+    text-align: center;
+}
+form h2{
+    text-align: center;
+}
+.form-input{
+    width: 80%;
+}
+.form-input input, .form-input button, .form-input textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.form-input input,textarea{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.form-input .valid:focus{
+    border: 1px solid rgb(64, 132, 251);
+}
+.form-input .notValid{
+    border: 1px solid rgb(227, 4, 4);
+}
+.form-input button{
+    background-color: rgb(88, 149, 255);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.form-input button:hover{
+    opacity: 85%;
+}
+.form-input button:active{
+    opacity: 100%;
+}
+.danger{
+    color: rgb(227, 4, 4);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 600px) {
+    .form-input {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 980px) {
+    .form-input {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .form-input {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .form-input {
+        width: 40%;
+    }
+}

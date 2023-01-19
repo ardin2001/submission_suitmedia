@@ -1,0 +1,14 @@
+.footer{
+    background-color: var(--primary);
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+.footer .sosmed {
+    padding-top: 10px;
+}
+.footer .sosmed a{
+    font-size: 24px;
+    color: white;
+    padding: 6px;
+}
