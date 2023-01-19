@@ -118,7 +118,7 @@ function FormInput() {
           style={isMessageValid === 'notValid' ? {margin : '0'} : {margin : '2px 0 15px'}}
         />
         {isMessageValid === 'notValid' ? <p className="danger">This field is required.</p> : ''}
-        <button className="btn-submit">Regis Now</button>
+        <button className="btn-submit">SUBMIT</button>
       </form>
     </section>
   );
